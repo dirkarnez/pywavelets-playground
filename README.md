@@ -1,6 +1,6 @@
 pywavelets-playground
 =====================
-Performing a 1D Discrete Wavelet Transform (DWT) and reconstructing the signal.
+<kbd>[**vscode-web-action**](https://github.com/dirkarnez/vscode-web-action/actions/workflows/vscode-web.yml)</kbd><br>
 
 ## Notes
 * `pywt.dwt()`: Splits your data into two parts.
