@@ -1,10 +1,9 @@
-python-playground
-=================
-[dirkarnez/python-portable](https://github.com/dirkarnez/python-portable)
+pywavelets-playground
+=====================
+Performing a 1D Discrete Wavelet Transform (DWT) and reconstructing the signal.
 
-### Installing packages
-1. fill in package name with version to `requirements.txt`
-2. `install-package.cmd`
-
-### Docker version
-- [dirkarnez/python-docker-compose-playground](https://github.com/dirkarnez/python-docker-compose-playground)
+## Notes
+* `pywt.dwt()`: Splits your data into two parts.
+* `cA` (Approximation): The "blurry" or averaged version of your data (low frequencies).
+* `cD` (Detail): The sharp changes, noise, or edges (high frequencies).
+* Wavelet Name: `"db1"` (or "haar") is the simplest wavelet available and is perfect for beginners.
