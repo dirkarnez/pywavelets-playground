@@ -31,5 +31,6 @@ class MatplotlibHelper:
         self.index += 1
         
     def __exit__(self, exc_type, exc_value, exc_traceback):
+        plt.tight_layout()
         plt.savefig(self.file_name)
         plt.clf()
