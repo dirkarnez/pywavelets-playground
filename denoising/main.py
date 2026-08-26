@@ -1,9 +1,10 @@
 # # -*- coding: utf-8 -*-
 from typing import Any, List
 import numpy as np
+import numpy.typing as npt
 import pywt
 
-def main():
+def demo_1() -> tuple[npt.NDArray[np.float64], npt.NDArray[np.float64], npt.NDArray[np.float64]]:
     # 1. Create a clean signal and add random noise
     np.random.seed(42)
     clean_signal = np.sin(np.linspace(0, 10, 100))
@@ -31,6 +32,8 @@ def main():
     # Print verification
     print("Noisy Signal MSE:", np.mean((noisy_signal - clean_signal) ** 2))
     print("Denoised Signal MSE:", np.mean((denoised_signal - clean_signal) ** 2))
+
+    return (clean_signal, noisy_signal, denoised_signal)
     
 if __name__ == "__main__":
-  main()
+  demo_1()
